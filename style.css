@@ -1,0 +1,13 @@
+body{
+    background: radial-gradient(263px at 100.2% 3%, rgb(12, 85, 141) 31.1%, rgb(205, 181, 93) 36.4%, rgb(244, 102, 90) 50.9%, rgb(199, 206, 187) 60.7%, rgb(249, 140, 69) 72.5%, rgb(12, 73, 116) 72.6%);
+    font-family: 'Poppins', sans-serif;
+}
+.app {
+    background: white;
+    max-width: 600px;
+    margin: 40px auto;
+padding: 25px;
+box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+border-radius: 15px;
+}
+
