@@ -5,44 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Lady</title>
     <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="app">
-    <header>
-<form>
-  <input type="search" placeholder="Enter a city.." required/>
-  <input type="submit" value="search"/>
-</form>
-    </header>
-    <main>
-      <div>
-    <h1>Durban</h1>
-    <p>
-      Friday 1:01, mist
-Humidity: 97%, Wind: 4.63km/h
-    </p>
-    </div>
-    <div>
-    ☀️ 12&deg;C
-  </div>  
-  </main>
-  <br>
-    <footer>
-      This project was coded
-      <a href="https://github.com/khanyozondi/" target="_blank"
-        >by Nokukhanya Zondi,</a
-      >
-      hosted on
-      <a href="https://github.com/khanyozondi/Weather-lady-app/" target="_blank"
-        >Github.</a
-      > Website hosted on
-      <a href="https://weather-lady-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <header>
+        <form class="search-form" id="search-forms">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="app-data">
+        <div>
+          <h1 class="app-city" id="city">Durban</h1>
+          <p class="app-details">Friday 1:01, mist Humidity: 97%, Wind: 4.63km/h</p>
+        </div>
+        <div class="app-temp">☀️ 12&deg;C</div>
+        </div>
+      </main>
+      <br />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/khanyozondi/" target="_blank"
+          >Nokukhanya Zondi,</a
+        >
+        hosted on
+        <a
+          href="https://github.com/khanyozondi/Weather-lady-app/"
+          target="_blank"
+          >Github.</a
+        >
+        Website hosted on
+        <a href="https://weather-lady-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
