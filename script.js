@@ -2,12 +2,12 @@ function upadateWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
-
+  let descriptionElement = document.querySelector("#descipton");
 
 
   cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(temperature);
-  console.log(response.data.temperature.current);
 }
 
 function searchCity(city) {
@@ -19,7 +19,7 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-  
+
   searchCity(searchInput.value);
 }
 
